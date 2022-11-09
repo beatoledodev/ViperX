@@ -1,0 +1,305 @@
+/** Reset **/
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Maven Pro';
+}
+
+/** Container **/
+
+#containerIndex {
+   display: grid;
+   grid-template-areas:
+     "header nav nav"
+     "carrosel carrosel carrosel"
+     "ultimasNoticias ultimasNoticias ultimasNoticias"
+     "jogosGratuitos jogosGratuitos jogosGratuitos"
+     "descontos descontos descontos"
+     "analises analises analises"
+     "contato contato contato"
+     "footer footer footer";
+
+   grid-template-rows: 75px 500px auto auto auto auto auto 150px; 
+   grid-template-columns: 20% auto 15%;
+}
+.border {
+   border: 1px solid black;
+}
+
+header {
+   grid-area: header;
+   display: flex;
+   justify-content: space-around;
+   padding: 16px;
+}
+nav {
+   grid-area: nav;
+   display: flex;
+    align-items: center;
+}
+section#carrosel {
+   grid-area: carrosel;     
+}
+section#ultimasNoticias {
+   grid-area: ultimasNoticias;
+}
+section#jogosGratuitos {
+   grid-area: jogosGratuitos;     
+}
+section#descontos {
+    grid-area: descontos;
+}
+section#analises {
+    grid-area: analises;
+}
+section#contato {
+    grid-area: contato;
+}
+footer {
+   grid-area: footer;
+}
+
+img {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+/** Logo **/
+#logo {
+   width: auto;
+   height: auto;
+}
+
+/** Menu **/
+#menu {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 2px 0px 2px 0px;
+
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 13pt;
+    padding: 16px;
+    display: inline-block;
+    font-weight: 700;
+    color: #610094;
+}
+
+ul li {
+    display: inline-block;
+    color: #150050;
+}
+
+ul li:hover {
+    border-bottom: 3px solid #150050;
+    transition: 0.2s;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 100x;
+    display: none;
+}
+
+ul li ul li {
+    background-color: #610094;
+    display: block;
+}
+
+ul li ul li a {
+    display: block;
+    color: white;
+}
+
+ul li ul li:hover {
+    background-color: #150050;
+}
+
+/** Sociais **/
+
+/** Carrosel **/
+#carrosel {
+   overflow: hidden;
+}
+#carrosel .noticiasCarrosel {
+   height: 100%;
+   width: 500%;
+   margin: 0;
+   animation-name: animacao;
+   animation-duration: 15s;
+   animation-iteration-count: infinite;
+}
+
+#carrosel .noticiasCarrosel img {
+   width: 20%;
+}
+
+@keyframes animacao {
+   0% { margin-left: 0; }
+   20% { margin-left: 0; }
+   25% { margin-left: -100%; }
+   45%{ margin-left: -100%; }
+   50%{ margin-left: -200%; }
+   70%{ margin-left: -200%; }
+   75%{ margin-left: -300%; }
+   95%{ margin-left: -300%; }
+   100%{ margin-left: -400%; }
+}
+
+/** Últimas Noticias**/
+#ultimasNoticias {
+
+}
+
+.noticiasContainer {
+   display: grid;
+   grid-template-columns: repeat(3, 300px);
+   grid-template-rows: repeat(2, 300px);
+   padding: 30px;
+   margin: 0 auto;
+   justify-content: space-evenly;
+   align-content: space-between;
+}
+
+.noticiasContainer div {
+   margin: 24px;
+}
+
+.tituloNoticias {
+   text-align: center;
+   padding-top: 24px;
+}
+
+.todasNoticias {
+   text-align: right;
+   margin: 16px;
+}
+
+/** Jogos Grauitos **/
+
+/** Descontos **/
+#descontos {
+
+}
+
+.descontosContainer {
+   display: grid;
+   grid-template-columns: repeat(3, 300px);
+   grid-template-rows: repeat(2, 300px);
+   padding: 30px;
+   margin: 0 auto;
+   justify-content: space-evenly;
+   align-content: space-between;
+}
+
+.descontosContainer div {
+   margin: 24px;
+}
+
+.tituloDescontos {
+   text-align: center;
+   padding-top: 24px;
+}
+
+/** Análises **/
+#analises {
+
+}
+
+.tituloAnalises {
+ text-align: center;
+ margin: 24px;
+}
+
+.analiseDestaque {
+   display: grid;
+   grid-template-columns: repeat(2, 600px);
+   grid-template-rows: repeat(1, 370px);
+   padding: 30px;
+   margin: 75px 200px;
+   justify-content: space-between;
+}
+
+.analiseDestaque div h1{
+   padding: 20px;
+}
+
+.analiseDestaque div p{
+   padding: 20px;
+}
+
+.ultimasAnalises {
+   display: grid;
+   grid-template-columns: repeat(3, 400px);
+   grid-template-rows: repeat(1, 370px);
+   padding: 30px;
+   margin: 75px 200px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+/** Contato **/
+.contato {
+   display: grid;
+   grid-template-columns: repeat(2, 350px);
+   grid-template-rows: repeat(1, 400px);
+   padding: 50px;
+   justify-content: space-evenly;
+ }  
+
+ .div1 {
+   display: flex;
+   padding: 10px;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.div2 {
+   border: solid;
+   border-radius: 16px;
+   display: flex;
+   padding: 10px;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.formulario {
+
+}
+
+/** Rodape **/
+#rodape {
+   display: grid;
+   grid-template-areas:
+   "footerItem footerItem footerItem footerItem"
+   "footerCopy footerCopy footerCopy footerCopy";
+
+   grid-template-rows: 150px auto; 
+   grid-template-columns: 25% 25% 25% 25%;
+
+}
+
+footer.footerItem {
+   grid-area: footerItem;
+}
+
+footer.footerCopy {
+   grid-area: footerCopy;
+}
+
+.footerItem {
+   padding:  16px;
+}
+
+#footerCopy {
+   text-align: center;
+   margin: auto;
+   padding:  16px;
+}
