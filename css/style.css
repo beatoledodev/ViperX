@@ -9,8 +9,7 @@
 /** Fonte **/
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
 
-/** Container **/
-
+/* Container */
 #containerIndex {
    display: grid;
    grid-template-areas:
@@ -25,26 +24,24 @@
 
    grid-template-rows: 100px 12% auto auto auto auto auto 150px; 
    grid-template-columns: 20% 65% 15%;
-}
-.border {
-   border: 1px solid black;
+   background-image: url("../images/background-image.png");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 section h1 {
-   color:#610094;
+   color: #8a01d4;
    font-weight: bold
 }
 
 section h2 {
-   color:#610094;
+   color: #8a01d4;
    font-weight: bold
 }
 
 section h4 {
    font-weight: bold
 }
-
-
 
 section#carrosel {
    grid-area: carrosel;     
@@ -79,19 +76,19 @@ img {
    max-height: 100%;
 }
 
-/** Logo **/
+/* Logo */
 #logo {
    background-color: white;
    width: auto;
    height: auto;
 }
 
-/** Barra de Navegação e Menus **/
+/* Barra de Navegação e Menus */
 #menu {
-   background-color: white;
+   background-color: rgb(255, 255, 255);
    display: flex;
    justify-content: space-evenly;
-   margin: 2px 0px 2px 0px;
+   margin: 0px 0px 2px 0px;
 }
 
 .itens-menu {
@@ -101,14 +98,15 @@ img {
 nav {
    width: 100%;
    height: 100px;
-   background-color: azure;
+   padding: 10px;
    grid-area: nav;
    display: flex;
    align-items: center;
    position: fixed;
    font-weight: bold
-   padding: 10px;
 }
+   
+
 
 nav ul a {
    text-decoration: none;
@@ -151,11 +149,11 @@ ul li ul li a {
 ul li ul li:hover {
    background-color: #150050;
 }
-/** Fim da Barra de Navegação e Menus **/
+/* Fim da Barra de Navegação e Menus */
 
-/** Sociais **/
+/* Sociais */
 
-/** Carrosel **/
+/* Slider */
 #carrosel {
    overflow: hidden;
 }
@@ -190,23 +188,23 @@ ul li ul li:hover {
    100% { margin-left: -400%; }
 }
 
-/** Últimas Noticias**/
+/* Últimas Noticias*/
 #noticias {
-   background-color: #610094;
+
 }
 
 .noticias__container {
    display: grid;
    grid-template-columns: repeat(3, 300px);
    grid-template-rows: repeat(2, 300px);
-   padding: 30px;
+   padding: 10px;
    margin: 0 auto;
    justify-content: space-evenly;
    align-content: space-between;
 }
 
 .noticias__container div {
-   margin: 24px;
+   margin: 10x;
    border-color: white;
    background-color: white;
    text-align: center;
@@ -227,13 +225,13 @@ ul li ul li:hover {
    margin: 16px;
 }
 
-/** Jogos Grauitos **/
-#jogos-gratuitos {
-   background-color: white;
+/* Jogos Gratuitos */
+#jogos-gratuitos__titulo {
+   color: #610094;
 }
 
-#jogos-gratuitos h1 {
-   color: #610094;
+#jogos-gratuitos p {
+   color: aliceblue;
 }
 
 .jogos-gratuitos__container {
@@ -246,8 +244,8 @@ ul li ul li:hover {
 
 .jogos-gratuitos__container div {
    margin: 20px;
-   border-color: black;
    background-color: white;
+   border-color: black;
    text-align: center;
 }
 
@@ -257,10 +255,9 @@ ul li ul li:hover {
    color: black;
 }
 
-
-/** Descontos **/
+/* Descontos */
 #descontos {
-   background-color: #610094;
+   
 }
 
 #descontos h1{
@@ -290,9 +287,10 @@ ul li ul li:hover {
    color: white;
 }
 
-/** Análises **/
+/* Análises */
 #analises {
-
+   color: aliceblue;
+   padding: 10px;
 }
 
 .tituloAnalises {
@@ -307,7 +305,7 @@ ul li ul li:hover {
    padding: 30px;
    margin: 0 auto;
    grid-gap: 20px;
-   justify-content: safe center;
+   justify-content: center;
 }
 
 .analiseDestaque div h1{
@@ -327,25 +325,23 @@ ul li ul li:hover {
    margin: 0 auto;
    justify-content: safe center;
 }
-/** Contato **/
+
+/* Contato */
 #contato {
-   background-color: #610094;
    align-items: center;
 }
 
 #contato img {
-   background-color: white;
    padding: 5px;
    border-radius: 10px;
 }
 
 .contato {
-   height: 100%;
+   height: 200px;
    display: grid;
    grid-template-columns: repeat(2, 350px);
-   padding: 50px;
    justify-content: space-evenly;
-   margin: 0px;
+   margin: 80px;
  }  
 
 .div1 {
@@ -413,38 +409,57 @@ ul li ul li:hover {
     background-color: #610094;
 }
 
-/** Rodape **/
+/* Rodape */
 #rodape {
    display: grid;
    align-items: center;
    grid-template-areas:
    "footerItem footerItem footerItem footerItem"
-   "footerCopy footerCopy footerCopy footerCopy";
+   "copyright copyright copyright copyright";
    grid-template-rows: 200px auto; 
    grid-template-columns: 25% 25% 25% 25%;
-
+   background-color: #171247;
+   color: aliceblue;
 }
 
 footer.footerItem {
    grid-area: footerItem;
 }
 
-footer.footerCopy {
-   grid-area: footerCopy;
+footer.copyright {
+   grid-area: copyright;
+}
+
+.footer__logo {
+   text-align: center;
+   padding:  10px;
+   margin:  20px;
 }
 
 .footerItem {
-   padding:  10px;
+   padding:  25px;
    margin:  0px;
-   line-height: 20px;
 }
 
 .footerItem h2 {
    color: #610094;
 }
 
-#footerCopy {
+#copyright {
    text-align: center;
    margin: auto;
    padding:  16px;
+   background-color: #171247;
+   color: aliceblue;
 }
+
+hr {
+   border: 1px solid #2c0f6e;
+}
+
+/* Responsivo */
+ @media (max-width: 450px) {
+   body {
+      background-color: blue;
+   }
+ }
