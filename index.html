@@ -1,6 +1,7 @@
 <!-- ATENÇÃO: Esse projeto está em construção, atualmente feito apenas de HTML e CSS, pendente das demais funções -->
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,21 @@
 	<title> VIPERX Universo Gamer </title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<div id="containerIndex">
-        <!-- Menu -->
-        <nav id="menu">
-        	<div>
-        		<header>
-        			<a href="index.html" title="VIPERX Games"><img src="images/logo_site.png" alt="VIPERX Games"></a>
-        		</header>
-        	</div>
-        	<div>
-	        	<ul>
-					<li><a href="index.html">Início</a></li>
-					<li><a href="pages/noticias.html">Notícias</a>
+		<!-- Menu -->
+		<nav id="menu">
+			<div>
+				<header>
+					<a href="index.html" title="VIPERX Games"><img src="images/logo_site.png" alt="VIPERX Games"></a>
+				</header>
+			</div>
+			<div>
+				<ul>
+					<li class="menu-botao"><img src="images/menu-button.png"></li>
+					<li class="navbar-links"><a href="index.html">Início</a></li>
+					<li class="navbar-links"><a href="pages/noticias.html">Notícias</a>
 						<ul>
 							<li><a href="pages/pc.html" class="itens-menu">PC</a></li>
 							<!--Pagina em desenvolvimento-->
@@ -32,205 +35,209 @@
 							<!--Pagina em desenvolvimento-->
 						</ul>
 					</li>
-					<li><a href="index.html#jogos gratuitos">Jogos Gratuitos</a></li>
-					<li><a href="index.html#descontos">Descontos</a></li>
-					<li><a href="index.html#analises">Análises</a></li>
-					<li><a href="index.html#contato">Contato</a></li>
+					<li class="navbar-links"><a href="index.html#jogos gratuitos">Jogos Gratuitos</a></li>
+					<li class="navbar-links"><a href="index.html#descontos">Descontos</a></li>
+					<li class="navbar-links"><a href="index.html#analises">Análises</a></li>
+					<li class="navbar-links"><a href="index.html#contato">Contato</a></li>
 				</ul>
 			</div>
 			<!-- Redes Sociais -->
 			<div>
-					<ul>
-						<li><a href="https://www.instagram.com" target="blank"><img src="images/instagram.png"></a>
-						</li>
-						<li><a href="https://twitter.com" target="blank"><img src="images/twitter.png"></a></li>
-						<li><a href="https://discord.com" target="blank"><img src="images/discord.png"></a></li>
-					</ul>
+				<ul>
+					<li class="navbar-sociais"><a href="https://www.instagram.com" target="blank"><img src="images/instagram.png"></a>
+					</li>
+					<li class="navbar-sociais"><a href="https://twitter.com" target="blank"><img src="images/twitter.png"></a></li>
+					<li class="navbar-sociais"><a href="https://discord.com" target="blank"><img src="images/discord.png"></a></li>
+				</ul>
 			</div>
 			<!-- Fim Redes Sociais -->
 		</nav>
 		<!-- Fim do menu -->
 
 		<!-- Carrosel -->
-        <section id="carrosel" class="border">
-        	<div class="noticiasCarrosel" class="border">
-        		<img src="images/nintendo_mario.jpg" alt="image 1">
-        		<img src="images/pc_scorn.jpg" alt="image 2">
-        		<img src="images/playstation_gow.png" alt="image 3">
-        		<img src="images/xbox_pass.png" alt="image 4">
-        		<img src="images/nintendo_mario.jpg" alt="image 1">
-        	</div>
-    	</section>
-    	<!-- Fim do Carrosel-->
-    	<!-- Últimas Notícias-->
-        <section id="noticias" class="border">
-        	<div class="tituloNoticias">
-        	<h1>Últimas Notícias</h1>
-	    	<p>Todas as novidades do mundo da tecnologia, games e mais.</p>
-	    	</div>
-	    	<div class="noticias__container">
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Lorem ipsum</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Lorem ipsum</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Lorem ipsum</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Lorem ipsum</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Lorem ipsum</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Lorem ipsum</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-        	</div>
+		<section id="carrosel" class="border">
+			<div class="noticiasCarrosel" class="border">
+				<img src="images/nintendo_mario.jpg" alt="image 1">
+				<img src="images/pc_scorn.jpg" alt="image 2">
+				<img src="images/playstation_gow.png" alt="image 3">
+				<img src="images/xbox_pass.png" alt="image 4">
+				<img src="images/nintendo_mario.jpg" alt="image 1">
+			</div>
+		</section>
+		<!-- Fim do Carrosel-->
+		<!-- Últimas Notícias-->
+		<section id="noticias" class="border">
+			<div class="tituloNoticias">
+				<h1>Últimas Notícias</h1>
+				<p>Todas as novidades do mundo da tecnologia, games e mais.</p>
+			</div>
+			<div class="noticias__container">
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
 			<hr>
-        </section>
-        <!-- Fim Últimas Notícias-->
+		</section>
+		<!-- Fim Últimas Notícias-->
 
-        <!-- Jogos Grauitos-->
-        <section id="jogos-gratuitos" class="border">
+		<!-- Jogos Grauitos-->
+		<section id="jogos-gratuitos" class="border">
 			<div class="jogos-gratuitos__titulo">
 				<h1>Jogos Gratuitos</h1>
 				<p>Os atuais descontos de jogos em diversas plataformas.</p>
+			</div>
+			<div class="jogos-gratuitos__container">
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Elden Ring</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
-				<div class="jogos-gratuitos__container">
-					<div class="border">
-						<img src="images/imagine.png">
-						<h3>Elden Ring</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="border">
-						<img src="images/imagine.png">
-						<h3>COD®: Modern Warfare® II</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
-					<div class="border">
-						<img src="images/imagine.png">
-						<h3>NBA2K23</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>COD®: Modern Warfare® II</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
-				<hr>
-    	</section>
-        <!-- Fim Jogos Grauitos-->
-
-        <!-- Descontos-->
-        <section id="descontos" class="border">
-            <div class="tituloDescontos">
-        	<h1>Descontos</h1>
-	    	<p>Os atuais descontos de jogos em diversas plataformas.</p>
-	    	</div>
-	    	<div class="descontosContainer">
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Elden Ring</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	        	</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>COD®: Modern Warfare® II</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>NBA2K23</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Terraria</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>New World</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        			<h3>Stray</h3>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-        	</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>NBA2K23</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
 			<hr>
-        </section>
-        	<!-- Fim Descontos-->
+		</section>
+		<!-- Fim Jogos Grauitos-->
 
-        	<!-- Análises-->
-        <section id="analises">
-        	<div class="tituloAnalises">
-        		<h1>Análises</h1>
-	    		<p>Resenhas completas de jogos, tecnologia, consoles e de todo o universo gamer. </p>
-        	</div>
-        	<div class="analiseDestaque">
-        		<div>
-        			<h1>Lorem ipsum dolor</h1>
-        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare libero in sapien accumsan vehicula. Duis eleifend rhoncus tellus, vel tincidunt justo. Donec feugiat ex at commodo mattis. In feugiat consequat odio, ac congue tellus pulvinar a. Aliquam vel volutpat ex. Maecenas volutpat massa et sapien porta, quis condimentum ligula luctus. </p>
-        		</div>
-        		<div class="border">
-        			<img src="images/imagine.png">
-        		</div>
-        	</div>	
-        	<div class="ultimasAnalises">
-        		<div class="border">
-        			<img src="images/imagine.png">
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        		</div>
-	        	<div class="border">
-        			<img src="images/imagine.png">
-        		</div>
-        	</div>
+		<!-- Descontos-->
+		<section id="descontos" class="border">
+			<div class="tituloDescontos">
+				<h1>Descontos</h1>
+				<p>Os atuais descontos de jogos em diversas plataformas.</p>
+			</div>
+			<div class="descontosContainer">
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Elden Ring</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>COD®: Modern Warfare® II</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>NBA2K23</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Terraria</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>New World</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+					<h3>Stray</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
 			<hr>
-        </section>
-        	<!-- Fim Análises-->
-        	<!-- Contato-->
-        <section id="contato" class="border">
-        	<div class="contato">
-        		<div class="div1">
-        			<div>
-	        			<h1>Contato</h1>
-	        			<br>
-	        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare libero in sapien accumsan vehicula.</p>
-	        		</div>
-	        		<div>
-	        			<p>Fale com nossa equipe!</p>
-	        			<h4>mail@example.com.br</h4>
-	        		</div>
-	        		<div>
-	        			<p>Converse com a gente!</p>
-	        			<h4>(00) 1234.5678</h4>
-	        		</div>
-	        		<div>
-	        			<h4>Acompanhe nossas sociais</h4>
-	        			<br>
-	        			<ul>
+		</section>
+		<!-- Fim Descontos-->
+
+		<!-- Análises-->
+		<section id="analises">
+			<div class="tituloAnalises">
+				<h1>Análises</h1>
+				<p>Resenhas completas de jogos, tecnologia, consoles e de todo o universo gamer. </p>
+			</div>
+			<div class="analiseDestaque">
+				<div>
+					<h1>Lorem ipsum dolor</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare libero in sapien accumsan
+						vehicula. Duis eleifend rhoncus tellus, vel tincidunt justo. Donec feugiat ex at commodo mattis.
+						In feugiat consequat odio, ac congue tellus pulvinar a. Aliquam vel volutpat ex. Maecenas
+						volutpat massa et sapien porta, quis condimentum ligula luctus. </p>
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+				</div>
+			</div>
+			<div class="ultimasAnalises">
+				<div class="border">
+					<img src="images/imagine.png">
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+				</div>
+				<div class="border">
+					<img src="images/imagine.png">
+				</div>
+			</div>
+			<hr>
+		</section>
+		<!-- Fim Análises-->
+		<!-- Contato-->
+		<section id="contato" class="border">
+			<div class="contato">
+				<div class="div1">
+					<div>
+						<h1>Contato</h1>
+						<br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare libero in sapien
+							accumsan vehicula.</p>
+					</div>
+					<div>
+						<p>Fale com nossa equipe!</p>
+						<h4>mail@example.com.br</h4>
+					</div>
+					<div>
+						<p>Converse com a gente!</p>
+						<h4>(00) 1234.5678</h4>
+					</div>
+					<div>
+						<h4>Acompanhe nossas sociais</h4>
+						<br>
+						<ul>
 							<li><a href="https://www.instagram.com" target="blank"><img src="images/instagram.png"></a>
 							</li>
 							<li><a href="https://twitter.com" target="blank"><img src="images/twitter.png"></a></li>
 							<li><a href="https://discord.com" target="blank"><img src="images/discord.png"></a></li>
 						</ul>
-	        		</div>
-        		</div>
-        		<div class="div2">
+					</div>
+				</div>
+				<div class="div2">
 					<form class="formulario">
 						<h2> Nos envie uma mensagem!</h2>
 						<br>
@@ -270,13 +277,13 @@
 						Desejo receber a newsletter
 						<input type="checkbox" name="">
 					</form>
-        		</div>
-        	</div>
-        </section>
-        <!-- Fim Contato-->
-        <!-- Rodapé-->
-        <footer>
-        	<div id="rodape">
+				</div>
+			</div>
+		</section>
+		<!-- Fim Contato-->
+		<!-- Rodapé-->
+		<footer>
+			<div id="rodape">
 				<div class="footer__logo" class="border">
 					<img src="../images/logo_site_branco.png">
 				</div>
@@ -314,9 +321,10 @@
 			<div id="copyright">
 				<p>© Copyright 2022</p>
 			</div>
-	    </footer>
-	    <!--Fim do Rodapé-->
+		</footer>
+		<!--Fim do Rodapé-->
 	</div>
 
 </body>
+
 </html>
