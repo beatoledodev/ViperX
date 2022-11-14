@@ -8,6 +8,7 @@
 
 /** Container **/
 
+<<<<<<< Updated upstream
 #containerIndex {
    display: grid;
    grid-template-areas:
@@ -15,6 +16,16 @@
      "carrosel carrosel carrosel"
      "ultimasNoticias ultimasNoticias ultimasNoticias"
      "jogosGratuitos jogosGratuitos jogosGratuitos"
+=======
+/* Container */
+#container__index {
+   display: grid;
+   grid-template-areas:
+     "nav nav nav"
+     "slider slider slider"
+     "noticias noticias noticias"
+     "jogos-gratuitos jogos-gratuitos jogos-gratuitos"
+>>>>>>> Stashed changes
      "descontos descontos descontos"
      "analises analises analises"
      "contato contato contato"
@@ -41,6 +52,7 @@ section h4 {
    font-weight: bold
 }
 
+<<<<<<< Updated upstream
 
 nav {
    width: 100%;
@@ -53,6 +65,10 @@ nav {
 }
 section#carrosel {
    grid-area: carrosel;     
+=======
+section#slider {
+   grid-area: slider;     
+>>>>>>> Stashed changes
 }
 section#ultimasNoticias {
    grid-area: ultimasNoticias;
@@ -69,6 +85,25 @@ section#analises {
 section#contato {
     grid-area: contato;
 }
+<<<<<<< Updated upstream
+=======
+
+nav {
+   width: 100%;
+   height: 100px;
+   padding: 10px;
+   grid-area: nav;
+   display: flex;
+   align-items: center;
+   position: fixed;
+   font-weight: bold
+}
+
+.navbar__botao {
+   display: none;
+}
+
+>>>>>>> Stashed changes
 footer {
    grid-area: footer;
 }
@@ -85,9 +120,15 @@ img {
    height: auto;
 }
 
+<<<<<<< Updated upstream
 /** Menu **/
 #menu {
    background-color: white;
+=======
+/* Barra de Navegação e Menus */
+#navbar {
+   background-color: rgb(255, 255, 255);
+>>>>>>> Stashed changes
    display: flex;
    justify-content: space-evenly;
    margin: 2px 0px 2px 0px;
@@ -138,17 +179,27 @@ ul li ul li:hover {
 
 /** Sociais **/
 
+<<<<<<< Updated upstream
 /** Carrosel **/
 #carrosel {
+=======
+/* Slider */
+#slider {
+>>>>>>> Stashed changes
    overflow: hidden;
 }
 
-#carrosel img{
+#slider img{
    height: 100%;
    width: 100%;
 }
+<<<<<<< Updated upstream
 #carrosel .noticiasCarrosel {
    height: 100%;
+=======
+
+#slider .slider__noticias {
+>>>>>>> Stashed changes
    width: 500%;
    margin: 0;
    animation-name: animacao;
@@ -156,8 +207,14 @@ ul li ul li:hover {
    animation-iteration-count: infinite;
 }
 
+<<<<<<< Updated upstream
 #carrosel .noticiasCarrosel img {
    width: 20%;
+=======
+#slider .slider__noticias img {
+   width: 1900px;
+   height: 675px;
+>>>>>>> Stashed changes
    background-repeat: no-repeat;
 }
 
@@ -173,9 +230,15 @@ ul li ul li:hover {
    100%{ margin-left: -400%; }
 }
 
+<<<<<<< Updated upstream
 /** Últimas Noticias**/
 #ultimasNoticias {
    background-color: #610094;
+=======
+/* Últimas Noticias*/
+#noticias {
+   color: #150050;
+>>>>>>> Stashed changes
 }
 
 .noticiasContainer {
@@ -195,13 +258,9 @@ ul li ul li:hover {
    text-align: center;
 }
 
-.tituloNoticias {
+.noticias__titulo {
    text-align: center;
    padding-top: 24px;
-   color: white;
-}
-
-.tituloNoticias h1 {
    color: white;
 }
 
@@ -238,31 +297,36 @@ ul li ul li:hover {
 
 /** Descontos **/
 #descontos {
+<<<<<<< Updated upstream
    background-color: #610094;
 }
 
 #descontos h1{
+=======
+>>>>>>> Stashed changes
    color: white;
+   text-align: center;
 }
 
-.descontosContainer {
+.descontos__container {
    display: grid;
    grid-template-columns: repeat(3, 300px);
    grid-template-rows: repeat(2, 300px);
    padding: 30px;
    margin: 0 auto;
+   color: #171247;
    justify-content: space-evenly;
    align-content: space-between;
 }
 
-.descontosContainer div {
+.descontos__container div {
    margin: 24px;
    border-color: white;
    background-color: white;
    text-align: center;
 }
 
-.tituloDescontos {
+.descontos__titulos {
    text-align: center;
    padding-top: 24px;
    color: white;
@@ -273,12 +337,12 @@ ul li ul li:hover {
 
 }
 
-.tituloAnalises {
+.analises__titulo {
  text-align: center;
  margin: 24px;
 }
 
-.analiseDestaque {
+.analise__destaque {
    display: grid;
    grid-template-columns: repeat(2, 30%);
    grid-template-rows: repeat(1, 300px);
@@ -288,15 +352,15 @@ ul li ul li:hover {
    justify-content: safe center;
 }
 
-.analiseDestaque div h1{
+.analise__destaque div h1{
    padding: 20px;
 }
 
-.analiseDestaque div p{
+.analise__destaque div p{
    padding: 20px;
 }
 
-.ultimasAnalises {
+.ultimas-analises {
    display: grid;
    grid-template-columns: repeat(3, 25%);
    grid-template-rows: repeat(1, 300px);
@@ -328,27 +392,27 @@ ul li ul li:hover {
 
  }  
 
-.div1 {
+.contato__infos {
    display: flex;
    padding: 10px;
    flex-direction: column;
    justify-content: space-evenly;
 }
 
-.div1 h1 {
+.contato__infos h1 {
    color: white;
 }
 
-.div1 p {
+.contato__infos p {
    color: white;
 }
 
-.div1 h4 {
+.contato__infos h4 {
    color: white;
 }
 
 
-.div2 {
+.contato__form {
    background-color: white;
    border-radius: 16px;
    display: flex;
@@ -396,33 +460,198 @@ ul li ul li:hover {
    display: grid;
    align-items: center;
    grid-template-areas:
+<<<<<<< Updated upstream
    "footerItem footerItem footerItem footerItem"
    "footerCopy footerCopy footerCopy footerCopy";
+=======
+   "footer__item footer__item footer__item footer__item"
+   "copyright copyright copyright copyright";
+>>>>>>> Stashed changes
    grid-template-rows: 200px auto; 
    grid-template-columns: 25% 25% 25% 25%;
 
 }
 
-footer.footerItem {
-   grid-area: footerItem;
+footer.footer__item {
+   grid-area: footer__item;
 }
 
 footer.footerCopy {
    grid-area: footerCopy;
 }
 
+<<<<<<< Updated upstream
 .footerItem {
    padding:  10px;
+=======
+.footer__item {
+   padding:  25px;
+>>>>>>> Stashed changes
    margin:  0px;
    line-height: 20px;
 }
 
-.footerItem h2 {
-   color: #610094;
+.footer__item h2 {
+   color: #8400ff;
 }
 
 #footerCopy {
    text-align: center;
    margin: auto;
+<<<<<<< Updated upstream
    padding:  20px;
 }
+=======
+   padding: 20px 16px 40px 16px;
+   background-color: #171247;
+   color: aliceblue;
+}
+
+hr {
+   height: 1px;
+   margin: 50px 0;
+   background: -webkit-gradient (linear, 0 0, 100% 0, from(#2c0f6e), color-stop(0.5, #2c0f6e), to(#2c0f6e));
+   background: -webkit-linear-gradient (left, #2c0f6e, #333333, #2c0f6e);
+   background: -moz-linear-gradient (left, #2c0f6e, #333333, #2c0f6e);
+   background: -o-linear-gradient (left, #2c0f6e, #333333, #2c0f6e);
+   background: linear-gradient (left, #2c0f6e, #333333, #2c0f6e);
+   border: 0;
+ }
+ 
+ hr:after {
+   display: block;
+   content: '';
+   height: 30px;
+   background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #2c0f6e), color-stop(100%, rgba(255, 255, 255, 0)));
+   background-image: -webkit-radial-gradient(center top, farthest-side, #2c0f6e 0%, rgba(255, 255, 255, 0) 100%);
+   background-image: -moz-radial-gradient(center top, farthest-side, #2c0f6e 0%, rgba(255, 255, 255, 0) 100%);
+   background-image: -o-radial-gradient(center top, farthest-side, #2c0f6e 0%, rgba(255, 255, 255, 0) 100%);
+   background-image: radial-gradient(farthest-side at center top, #2c0f6e 0%, rgba(255, 255, 255, 0) 100%);
+ }
+
+
+/* Responsivo */
+@media (max-width: 1023px) {
+   /* Geral */
+      #container__index {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      background-image: url("../images/background-image.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   nav {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+   }
+
+   #navbar {
+      justify-content: start;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      height: 130px;
+   }
+
+   .navbar__botao {
+      display: block;
+      padding: 20px;
+   }
+
+   .navbar__links {
+      display: none;
+      background-color: aliceblue;
+      width: 200px;
+      height: 80px;
+      padding-top: 20px;
+   }
+
+   .navbar__sociais {
+      display: none;
+   }
+
+   #slider {
+      overflow: hidden;
+   }
+
+   #slider .slider__noticias {
+      display: flex;
+      flex-direction: row;
+      margin: 0px;
+   }
+
+   #slider .slider__noticias img {
+      max-width: 1600px;
+      max-height: 650px;
+      width: auto;
+      height: auto;
+      background-repeat: no-repeat;
+   }
+
+   .noticias__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 10px;
+      margin: 0 auto;
+   }
+
+   .jogos-gratuitos__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      align-content: space-between;
+   }
+
+   .descontos__container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 30px;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      align-content: space-between;
+   }
+
+   .ultimas-analises {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 30px;
+      grid-gap: 20px;
+      margin: 0 auto;
+      justify-content: safe center;
+   }
+
+   .analise__destaque{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 30px;
+      margin: 0 auto;
+      grid-gap: 20px;
+      justify-content: center;
+   }
+
+    .contato {
+      display: flex;
+      flex-direction: column;
+      margin: 200px 20px 390px 20px;
+      padding: 15px;
+   }
+
+    #rodape {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-color: #171247;
+      color: aliceblue;
+   }
+ }
+>>>>>>> Stashed changes
